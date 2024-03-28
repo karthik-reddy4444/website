@@ -8,6 +8,17 @@ font-style:times new roman;
 text-align:center;}
 table,th{ border:2px solid blue;
  border-collapse: collapse;
+         .moving-heading {
+      position: relative;
+      animation: moveHeading 10s linear infinite alternate;
+ @keyframes moveHeading {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 1300px; /* Adjust the distance as needed */
+      }
+
 }
 h1{background-color:white;
  text-align:center;
@@ -31,7 +42,7 @@ footer {
 </style>
 <body>
 <header>
-<h1> MARAM KARTHIK REDDY....💙 </h1>
+ <h1 class="moving-heading"> MARAM KARTHIK REDDY....💙 </h1>
 </header>
 <div class="video">
 <iframe width="760" height="500"
